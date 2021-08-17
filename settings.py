@@ -41,12 +41,7 @@ INSTALLED_APPS = [
     'pages',
     'upload',
     'rest_framework',
-    'reactDjango',
-    'djangoMl',
     'simpleLinerRegression',
-    'graph',
-    'heartattack',
-    'patient'
 ]
 
 MIDDLEWARE = [
@@ -136,7 +131,3 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
 MEDIA_URL = '/media/'
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'react_ui/build/static'),
-]
