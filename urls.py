@@ -27,26 +27,10 @@ from django.conf.urls.static import static
 from django.conf.urls import url
 
 urlpatterns = [
-    path('',include('reactDjango.urls')),
     path('admin/', admin.site.urls),
-    path('home/',home_view,name = 'home'),
-    path('contact/',contact_view),
-    path('upload/',upload_view),
-    path('product/',product_detail_view),
-    path('create/',product_create_view),
-    path('create2/',render_initial_data),
-    path('products/<int:my_id>/',dynamic_lookup_view,name = 'product-detail'),
-    path('delete/<int:my_id>/',product_delete_view),
-    path('list/',product_list_view),
-    path('mlHome/',home_view,name = 'mlhome'),
-    path('result/',result_view,name = 'result'),
     path('slr/',home_view,name = 'slr'),
     path('slr_result/',result_view,name = 'slr_result'),
-    path('graph/',main_view,name = 'graph'),
-    path('input/',input_view,name = 'input'),
-    path('output/',res_view,name = 'output'),
-    path('hospital/',include('patient.urls')),
-         
+    path('graph/',main_view,name = 'graph'),         
 ]
 
 if settings.DEBUG:
