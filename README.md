@@ -61,4 +61,4 @@ def result_view(request):
 
 ![](1.png)
 
-![](2.png)
+![](stat.png)
